@@ -1,3 +1,4 @@
 .cache/
 .tmp/
-out/
+out/*
+!out/libwg-go.a
