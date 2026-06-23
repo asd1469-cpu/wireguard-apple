@@ -4,6 +4,8 @@
 #include "key.h"
 #include "x25519.h"
 
+#include <sys/types.h> /* Fix: u_int32_t, u_char, u_int16_t for Xcode 16 / iOS 18 SDK */
+
 /* From <sys/kern_control.h> */
 #define CTLIOCGINFO 0xc0644e03UL
 struct ctl_info {
